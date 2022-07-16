@@ -1,0 +1,12 @@
+### valid path variable
+GET http://localhost:8080/validatePathVariable/5
+
+### invalid path variable
+GET http://localhost:8080/validatePathVariable/4
+
+
+### valid parameter
+GET http://localhost:8080/validateRequestParameter?param=5
+
+### invalid parameter
+GET http://localhost:8080/validateRequestParameter?param=4
