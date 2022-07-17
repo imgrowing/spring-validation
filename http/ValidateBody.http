@@ -1,7 +1,0 @@
-POST http://localhost:8080/validateBody
-Content-Type: application/json
-
-{
-  "ipAddress": "invalid",
-  "numberBetweenOneAndTen": 99
-}

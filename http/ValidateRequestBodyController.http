@@ -1,0 +1,28 @@
+### validateBody
+POST http://localhost:8080/validateBody
+Content-Type: application/json
+
+{
+  "ipAddress": "invalid",
+  "numberBetweenOneAndTen": 99
+}
+
+
+### validateBody With CustomValidator - valid
+POST http://localhost:8080/validateBodyWithCustomValidator
+Content-Type: application/json
+
+{
+  "ipAddress": "111.112.113.114",
+  "numberBetweenOneAndTen": 3
+}
+
+
+### validateBody With CustomValidator - invalid
+POST http://localhost:8080/validateBodyWithCustomValidator
+Content-Type: application/json
+
+{
+  "ipAddress": "invalid",
+  "numberBetweenOneAndTen": 99
+}
