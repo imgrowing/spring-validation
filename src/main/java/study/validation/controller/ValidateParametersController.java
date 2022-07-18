@@ -26,9 +26,11 @@ public class ValidateParametersController {
         return ResponseEntity.ok("valid");
     }
 
+    /* Global @ControllerAdvice를 적용하기 위해 주석 처리함
     @ExceptionHandler(ConstraintViolationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<String> handleConstraintViolationException(ConstraintViolationException e) {
         return new ResponseEntity<>("not valid due to validation error: " + e.getMessage(), HttpStatus.BAD_REQUEST);
     }
+    */
 }

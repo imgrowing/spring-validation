@@ -11,7 +11,7 @@ public class InputWithCustomValidator {
     @Max(10)
     private int numberBetweenOneAndTen;
 
-    @IpAddress
+    @IpAddress(message = "IP Address가 올바르지 않습니다.")
     private String ipAddress;
 
     public int getNumberBetweenOneAndTen() {
